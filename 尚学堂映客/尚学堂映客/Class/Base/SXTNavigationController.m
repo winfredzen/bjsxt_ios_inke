@@ -19,8 +19,9 @@
     
      UIColor * radomcolor = [UIColor colorWithRed:36/255.0 green:215/255.0 blue:200/255.0 alpha:1];
     
+    //导航栏背景色
     self.navigationBar.barTintColor = radomcolor;
-    
+    //导航栏字体颜色
     self.navigationBar.tintColor = [UIColor whiteColor];
     
 }

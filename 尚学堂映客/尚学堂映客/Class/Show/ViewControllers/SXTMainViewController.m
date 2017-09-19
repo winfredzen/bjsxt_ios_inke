@@ -51,7 +51,7 @@
 }
 
 - (void)setupChildControllers {
-    
+    //关注 热门 附近
     NSArray * vcNames = @[@"SXTFocusLiveViewController",@"SXTHotLiveViewController",@"SXTNearLiveViewController"];
     
     for (NSInteger i = 0 ; i < vcNames.count; i ++) {

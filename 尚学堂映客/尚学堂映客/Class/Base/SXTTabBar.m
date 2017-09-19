@@ -6,7 +6,7 @@
 //  Copyright © 2016年 大欢. All rights reserved.
 //
 
-#import "SXTTabbar.h"
+#import "SXTTabBar.h"
 
 @interface SXTTabbar ()
 
@@ -62,7 +62,7 @@
         for (int i = 0; i < self.datalist.count; i++) {
 
             UIButton * item = [UIButton buttonWithType:UIButtonTypeCustom];
-            
+            //不让图片在高亮图片下改变
             item.adjustsImageWhenHighlighted = NO;
             
             [item setImage:[UIImage imageNamed:self.datalist[i]] forState:UIControlStateNormal];
@@ -82,7 +82,7 @@
             
         }
         
-        //装载相机
+        //添加直播按钮
         [self addSubview:self.cameraBtn];
         
     }
@@ -119,6 +119,7 @@
         self.block(self,button.tag);
     }
 
+    //直播按钮直接返回
     if (button.tag == SXTItemTypeLaunch) {
         return;
     }
@@ -132,6 +133,7 @@
     //将当前按钮设置成上一个按钮
     self.lastItem = button;
     
+    //按钮的动画效果
     [UIView animateWithDuration:0.2 animations:^{
         
         button.transform = CGAffineTransformMakeScale(1.2, 1.2);

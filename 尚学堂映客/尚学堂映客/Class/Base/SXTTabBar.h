@@ -12,12 +12,15 @@
 
 typedef NS_ENUM(NSUInteger, SXTItemType) {
 
-    SXTItemTypeLaunch = 10,
-    SXTItemTypeLive = 100,
-    SXTItemTypeMe,
+    SXTItemTypeLaunch = 10,//启动直播
+    SXTItemTypeLive = 100,//展示直播
+    SXTItemTypeMe,//我
 };
 
 
+/**
+ 自定义Tabbar
+ */
 @class SXTTabbar;
 
 typedef void(^TabBlock)(SXTTabbar * tabbar,SXTItemType idx);

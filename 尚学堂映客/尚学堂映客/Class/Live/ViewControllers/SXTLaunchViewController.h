@@ -8,6 +8,9 @@
 
 #import "SXTBaseViewController.h"
 
+/**
+ 启动直播页面VC
+ */
 @interface SXTLaunchViewController : SXTBaseViewController
 
 @end

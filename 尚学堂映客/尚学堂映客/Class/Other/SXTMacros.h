@@ -6,6 +6,8 @@
 //  Copyright © 2016年 大欢. All rights reserved.
 //
 
+//创建的宏
+
 #ifndef SXTMacros_h
 #define SXTMacros_h
 

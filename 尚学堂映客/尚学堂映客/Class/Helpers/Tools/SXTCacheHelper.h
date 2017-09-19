@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ 缓存帮助类
+ */
 @interface SXTCacheHelper : NSObject
 
 + (NSString *)getAdvertiseImage;

@@ -40,6 +40,8 @@
         } else {
             
             NSLog(@"登录失败");
+            //测试用
+            self.view.window.rootViewController = [[SXTTabBarController alloc] init];
         }
         
     });

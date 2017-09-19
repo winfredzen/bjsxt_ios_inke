@@ -23,12 +23,14 @@
 
 - (void)tabbar:(SXTTabbar *)tabbar clickIndex:(SXTItemType)idx {
     
+    //非启动直播
     if (idx != SXTItemTypeLaunch) {
         //当前tabbar的索引
         self.selectedIndex = idx - SXTItemTypeLive;
         return;
     }
     
+    //模态视图
     SXTLaunchViewController * launchVC = [[SXTLaunchViewController alloc] init];
     
     [self presentViewController:launchVC animated:YES completion:nil];
@@ -52,9 +54,10 @@
     //加载所有视图控制器
     [self configViewControllers];
     
-    //加载自定义tabbar
+    //加载自定义tabbar 这里是直接加在self.tabBar上的
     [self.tabBar addSubview:self.sxtTabbar];
     
+    //解决tabbar的阴影线
     [[UITabBar appearance] setShadowImage:[UIImage new]];
     [[UITabBar appearance] setBackgroundImage:[[UIImage alloc]init]];
 

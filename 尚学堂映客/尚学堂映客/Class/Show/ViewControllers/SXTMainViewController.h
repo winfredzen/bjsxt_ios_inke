@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "SXTBaseViewController.h"
 
+/**
+ HomeVC
+ */
 @interface SXTMainViewController : SXTBaseViewController
 
 @end

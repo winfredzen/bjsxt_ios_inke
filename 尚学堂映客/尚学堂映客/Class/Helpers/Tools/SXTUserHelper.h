@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ 用户帮助类
+ */
 @interface SXTUserHelper : NSObject
 
 + (instancetype)sharedUser;

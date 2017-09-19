@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ 广告页
+ */
 @interface SXTAdvertiseView : UIView
 
 @property (nonatomic, strong) UIImage * image;

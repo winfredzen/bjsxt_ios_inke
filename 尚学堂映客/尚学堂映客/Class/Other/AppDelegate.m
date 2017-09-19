@@ -30,14 +30,16 @@
     
     UIViewController * mainVC ;
     
-    if ([SXTUserHelper isAutoLogin]) {
-        
-        mainVC = [[SXTTabBarController alloc] init];
-
-    } else {
-        mainVC = [[SXTLoginViewController alloc] init];
-
-    }
+    mainVC = [[SXTTabBarController alloc] init];
+    
+//    if ([SXTUserHelper isAutoLogin]) {
+//        
+//        mainVC = [[SXTTabBarController alloc] init];
+//
+//    } else {
+//        mainVC = [[SXTLoginViewController alloc] init];
+//
+//    }
     
     self.window.rootViewController = mainVC;
     
