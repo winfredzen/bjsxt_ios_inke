@@ -94,9 +94,10 @@
     return self;
 }
 
-
+//mainVC滚动时调动
 - (void)scrolling:(NSInteger)tag {
     
+    //获取button
     UIButton * button = self.buttons[tag];
     
     [UIView animateWithDuration:0.25 animations:^{
@@ -105,6 +106,7 @@
     }];
 }
 
+//点击调用
 - (void)titleClick:(UIButton *)button {
     
     self.block(button.tag);

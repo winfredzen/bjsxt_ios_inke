@@ -16,6 +16,7 @@
 
 #define SERVER_HOST @"http://service.ingkee.com"
 
+//图片服务器
 #define IMAGE_HOST @"http://img.meelive.cn/"
 
 //首页数据

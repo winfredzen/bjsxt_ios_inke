@@ -733,7 +733,7 @@
 				TargetAttributes = {
 					0FE89A611D62EAD0006F1A54 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 28KZ3JE3WP;
+						DevelopmentTeam = D66534A92T;
 					};
 				};
 			};
@@ -1015,6 +1015,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = D66534A92T;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1028,7 +1029,7 @@
 					"$(PROJECT_DIR)/尚学堂映客/Class/Lib/UMSocial_Sdk_5.2.1",
 					"$(PROJECT_DIR)/尚学堂映客/Class/Lib/UMSocial_Sdk_Extra_Frameworks/SinaSSO",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bjsxt.realphone;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hxx.realphone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1043,6 +1044,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = D66534A92T;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1056,7 +1058,7 @@
 					"$(PROJECT_DIR)/尚学堂映客/Class/Lib/UMSocial_Sdk_5.2.1",
 					"$(PROJECT_DIR)/尚学堂映客/Class/Lib/UMSocial_Sdk_Extra_Frameworks/SinaSSO",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bjsxt.realphone;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hxx.realphone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";

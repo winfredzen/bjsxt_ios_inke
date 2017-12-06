@@ -50,6 +50,11 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"title_button_more"] style:UIBarButtonItemStylePlain target:self action:@selector(search:)];
 }
 
+
+/**
+ 设置子控制器
+ 1.通过NSClassFromString来创建ViewController
+ */
 - (void)setupChildControllers {
     //关注 热门 附近
     NSArray * vcNames = @[@"SXTFocusLiveViewController",@"SXTHotLiveViewController",@"SXTNearLiveViewController"];
@@ -99,6 +104,9 @@
     [self scrollViewDidEndScrollingAnimation:scrollView];
     
 }
+
+
+#pragma mark - 懒加载
 
 - (SXTMainTopView *)topView {
     
