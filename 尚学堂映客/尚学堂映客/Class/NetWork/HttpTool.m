@@ -9,6 +9,15 @@
 #import "HttpTool.h"
 #import "AFNetworking.h"
 
+/**
+ 一些学习的说明：
+ 
+ 1.为什么继承AFHTTPSessionManager？AFHTTPSessionManager与AFURLSessionManager的区别
+ 参考：http://nshipster.cn/afnetworking-2/的说明
+ 
+ */
+
+
 static NSString * kBaseUrl = SERVER_HOST;
 
 @interface AFHttpClient : AFHTTPSessionManager

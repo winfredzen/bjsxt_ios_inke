@@ -12,14 +12,19 @@
 
 //http://service.ingkee.com/api/live/gettop
 
+
+/**
+ API配置
+ */
 @interface APIConfig : NSObject
 
+//信息类服务器地址
 #define SERVER_HOST @"http://service.ingkee.com"
 
 //图片服务器
 #define IMAGE_HOST @"http://img.meelive.cn/"
 
-//首页数据
+//热门直播
 #define API_LiveGetTop @"api/live/gettop"
 
 //广告地址
