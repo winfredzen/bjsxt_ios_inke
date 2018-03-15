@@ -9,6 +9,7 @@
 #import "SXTBaseViewController.h"
 #import "SXTLive.h"
 
+//直播控制器
 @interface SXTPlayerViewController : SXTBaseViewController
 
 @property (nonatomic, strong) SXTLive * live;

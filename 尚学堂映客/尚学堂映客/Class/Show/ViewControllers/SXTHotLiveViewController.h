@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "SXTBaseViewController.h"
 
+//热门
 @interface SXTHotLiveViewController :UITableViewController
 
 @end

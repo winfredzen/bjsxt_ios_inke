@@ -28,7 +28,7 @@
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
     
-    if (self.viewControllers.count) {
+    if (self.viewControllers.count) {//push的时候 隐藏底部的BottomBar
         
         viewController.hidesBottomBarWhenPushed = YES;
     }

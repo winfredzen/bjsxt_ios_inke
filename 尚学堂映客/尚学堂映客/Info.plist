@@ -58,6 +58,8 @@
 	</array>
 	<key>NSCameraUsageDescription</key>
 	<string>使用相机</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>在App使用时，启用定位服务</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

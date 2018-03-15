@@ -56,12 +56,13 @@
     
     [super viewWillAppear:animated];
     
-    self.navigationController.navigationBarHidden = YES;
+    self.navigationController.navigationBarHidden = YES;//隐藏
 
     [self installMovieNotificationObservers];
     
     [self.player prepareToPlay];
     
+    //关闭按钮添加到window上
     UIWindow * window = [(AppDelegate *)[UIApplication sharedApplication].delegate window];
     [window addSubview:self.closeBtn];
 
@@ -92,6 +93,7 @@
     
 }
 
+//初始化播放器
 - (void)initPlayer {
     
     IJKFFOptions *options = [IJKFFOptions optionsByDefault];
@@ -142,9 +144,9 @@
 
 - (void)loadStateDidChange:(NSNotification*)notification
 {
-    //    MPMovieLoadStateUnknown        = 0,
-    //    MPMovieLoadStatePlayable       = 1 << 0,
-    //    MPMovieLoadStatePlaythroughOK  = 1 << 1, // Playback will be automatically started in this state when shouldAutoplay is YES
+    //    MPMovieLoadStateUnknown        = 0, 未知
+    //    MPMovieLoadStatePlayable       = 1 << 0, 缓冲结束可以播放
+    //    MPMovieLoadStatePlaythroughOK  = 1 << 1, // Playback will be automatically started in this state when shouldAutoplay is YES 缓冲结束自动播放
     //    MPMovieLoadStateStalled        = 1 << 2, // Playback will be automatically paused in this state, if started
     
     IJKMPMovieLoadState loadState = _player.loadState;
@@ -238,6 +240,7 @@
 /* Register observers for the various movie object notifications. */
 -(void)installMovieNotificationObservers
 {
+    //状态改变
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(loadStateDidChange:)
                                                  name:IJKMPMoviePlayerLoadStateDidChangeNotification
@@ -253,6 +256,7 @@
                                                  name:IJKMPMediaPlaybackIsPreparedToPlayDidChangeNotification
                                                object:_player];
     
+    //用户操作
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(moviePlayBackStateDidChange:)
                                                  name:IJKMPMoviePlayerPlaybackStateDidChangeNotification

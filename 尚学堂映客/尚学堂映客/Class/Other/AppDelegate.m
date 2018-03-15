@@ -14,6 +14,7 @@
 #import "SXTAdvertiseView.h"
 #import "AppDelegate+SXTUMeung.h"
 #import "SXTUserHelper.h"
+#import "SXTLocationManager.h"
 
 @interface AppDelegate ()
 
@@ -49,6 +50,12 @@
     //载入广告
     SXTAdvertiseView * adverVC = [SXTAdvertiseView loadAdvertiseView];
     [self.window addSubview:adverVC];
+    
+    
+    //定位
+    [[SXTLocationManager sharedManager] getGps:^(NSString *lat, NSString *lon) {
+        
+    }];
     
     return YES;
 }

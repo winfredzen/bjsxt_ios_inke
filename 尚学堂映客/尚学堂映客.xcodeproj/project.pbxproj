@@ -96,6 +96,8 @@
 		0FFD3AF81D6C913800402A8D /* close_preview@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FFD3AEF1D6C913800402A8D /* close_preview@3x.png */; };
 		0FFD3AF91D6C913800402A8D /* ios-29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FFD3AF01D6C913800402A8D /* ios-29x29.png */; };
 		CEB5601CDD1ED87C66C0E058 /* libPods-尚学堂映客.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EDF8678802255DF9060123EA /* libPods-尚学堂映客.a */; };
+		D7ED1D752057FBAE006DB07B /* SXTLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D7ED1D742057FBAE006DB07B /* SXTLocationManager.m */; };
+		D7ED1D772057FBCB006DB07B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7ED1D762057FBCA006DB07B /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -252,6 +254,9 @@
 		0FFD3AF01D6C913800402A8D /* ios-29x29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ios-29x29.png"; sourceTree = "<group>"; };
 		A73240DC43346AFC02F424C9 /* Pods-尚学堂映客.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-尚学堂映客.debug.xcconfig"; path = "Pods/Target Support Files/Pods-尚学堂映客/Pods-尚学堂映客.debug.xcconfig"; sourceTree = "<group>"; };
 		D3CB786862DC56DFB2B6DE23 /* Pods-尚学堂映客.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-尚学堂映客.release.xcconfig"; path = "Pods/Target Support Files/Pods-尚学堂映客/Pods-尚学堂映客.release.xcconfig"; sourceTree = "<group>"; };
+		D7ED1D732057FBAE006DB07B /* SXTLocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXTLocationManager.h; sourceTree = "<group>"; };
+		D7ED1D742057FBAE006DB07B /* SXTLocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXTLocationManager.m; sourceTree = "<group>"; };
+		D7ED1D762057FBCA006DB07B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		EDF8678802255DF9060123EA /* libPods-尚学堂映客.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-尚学堂映客.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -260,6 +265,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7ED1D772057FBCB006DB07B /* CoreLocation.framework in Frameworks */,
 				0F3BCBD81D6BEC7C00DB6D7A /* VideoToolbox.framework in Frameworks */,
 				0F5CD0281D767B080052E26B /* libUMSocial_Sdk_5.2.1.a in Frameworks */,
 				0F3BCBD61D6BEC7200DB6D7A /* QuartzCore.framework in Frameworks */,
@@ -342,6 +348,8 @@
 				0F5CCFEB1D758AD90052E26B /* SXTCacheHelper.m */,
 				0F5CD0351D767EEF0052E26B /* SXTUserHelper.h */,
 				0F5CD0361D767EEF0052E26B /* SXTUserHelper.m */,
+				D7ED1D732057FBAE006DB07B /* SXTLocationManager.h */,
+				D7ED1D742057FBAE006DB07B /* SXTLocationManager.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -680,6 +688,7 @@
 		5463EFBFC27DA8FC74A0155B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D7ED1D762057FBCA006DB07B /* CoreLocation.framework */,
 				0F3BCBD71D6BEC7C00DB6D7A /* VideoToolbox.framework */,
 				0F3BCBD51D6BEC7200DB6D7A /* QuartzCore.framework */,
 				0F3BCBD31D6BEC6B00DB6D7A /* OpenGLES.framework */,
@@ -866,6 +875,7 @@
 				0F0B66B81D6AFAAD000578AA /* SXTBaseHandler.m in Sources */,
 				0F5CD03A1D7687160052E26B /* AppDelegate+SXTUMeung.m in Sources */,
 				0F0B66C61D6B33D9000578AA /* UIImageView+SDWebImage.m in Sources */,
+				D7ED1D752057FBAE006DB07B /* SXTLocationManager.m in Sources */,
 				0F0B66831D6AD14A000578AA /* SXTNavigationController.m in Sources */,
 				0F0B668F1D6AD14A000578AA /* ViewController.m in Sources */,
 				0F0B66891D6AD14A000578AA /* SXTLoginViewController.m in Sources */,
@@ -1022,7 +1032,7 @@
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/尚学堂映客/Class/Other/yingke.pch";
 				INFOPLIST_FILE = "尚学堂映客/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1051,7 +1061,7 @@
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/尚学堂映客/Class/Other/yingke.pch";
 				INFOPLIST_FILE = "尚学堂映客/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

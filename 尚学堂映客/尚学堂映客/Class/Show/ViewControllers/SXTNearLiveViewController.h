@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "SXTBaseViewController.h"
 
+//附近
 @interface SXTNearLiveViewController : UIViewController
 
 @end

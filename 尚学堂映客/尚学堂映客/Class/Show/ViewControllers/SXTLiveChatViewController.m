@@ -63,7 +63,7 @@
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 30, 25)];
     CGRect loveFrame = [fromView convertRect:fromView.frame toView:addToView];
     CGPoint position = CGPointMake(fromView.layer.position.x, loveFrame.origin.y - 30);
-    imageView.layer.position = position;
+    imageView.layer.position = position; //心形效果位置
     NSArray *imgArr = @[@"heart_1",@"heart_2",@"heart_3",@"heart_4",@"heart_5",@"heart_1"];
     NSInteger img = arc4random()%6;
     imageView.image = [UIImage imageNamed:imgArr[img]];
@@ -81,6 +81,7 @@
     positionAnimate.fillMode = kCAFillModeForwards;
     positionAnimate.removedOnCompletion = NO;
     
+    //关键帧动画
     UIBezierPath *sPath = [UIBezierPath bezierPath];
     [sPath moveToPoint:position];
     CGFloat sign = arc4random()%2 == 1 ? 1 : -1;

@@ -9,6 +9,7 @@
 #import "SXTBaseViewController.h"
 #import "SXTLive.h"
 
+//直播页面上的一些图标
 @interface SXTLiveChatViewController : SXTBaseViewController
 
 @property (nonatomic, strong) SXTLive * live;
